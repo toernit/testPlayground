@@ -2,7 +2,7 @@ import { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TrashIcon, MoonIcon, SunIcon, PaperAirplaneIcon, PlusIcon } from '@heroicons/react/24/solid';
 
-export default function App() {
+function App() {
   const [tasks, setTasks] = useState<string[]>([]);
   const [input, setInput] = useState('');
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +47,7 @@ export default function App() {
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] font-sans p-6 transition-colors duration-300 ease-in-out">
       <main className="max-w-2xl mx-auto bg-[var(--card)] border border-[var(--border)] rounded-2xl p-8 shadow-lg">
         <motion.h1
-          className="text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text"
+          className="text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-600 via-white to-red-500 text-transparent bg-clip-text"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -68,9 +68,9 @@ export default function App() {
             />
             <button
               onClick={addTask}
-              className="flex items-center justify-center bg-indigo-600 text-white px-4 py-2 rounded shadow hover:bg-indigo-700 transition"
+              className="flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition"
             >
-              <PlusIcon className="w-5 h-5" />
+              <PlusIcon className="w-4 h-4" />
             </button>
           </div>
           <ul>
@@ -86,10 +86,10 @@ export default function App() {
                   <span>{task}</span>
                   <button
                     onClick={() => removeTask(i)}
-                    className="text-red-600 hover:text-red-800 transition"
+                    className="text-red-500 hover:text-red-700 transition"
                     aria-label="Delete task"
                   >
-                    <TrashIcon className="w-5 h-5" />
+                    <TrashIcon className="w-4 h-4" />
                   </button>
                 </motion.li>
               ))}
@@ -130,9 +130,9 @@ export default function App() {
             />
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-2 px-4 rounded shadow hover:bg-green-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-red-600 text-white py-2 px-4 rounded shadow hover:bg-red-700 transition"
             >
-              <PaperAirplaneIcon className="w-5 h-5 rotate-45" /> Send
+              <PaperAirplaneIcon className="w-4 h-4 rotate-45" /> Send
             </button>
           </form>
         </section>
@@ -140,7 +140,7 @@ export default function App() {
         {/* Dark Mode Toggle */}
         <div className="flex justify-between items-center mt-10 p-4 border rounded">
           <span className="font-semibold flex items-center gap-2">
-            {darkMode ? <MoonIcon className="w-5 h-5" /> : <SunIcon className="w-5 h-5" />} Dark Mode
+            {darkMode ? <MoonIcon className="w-4 h-4 text-blue-500" /> : <SunIcon className="w-4 h-4 text-yellow-400" />} Dark Mode
           </span>
           <label className="switch relative inline-block w-10 h-6">
             <input
@@ -159,3 +159,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

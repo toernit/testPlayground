@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional theme vars */
 :root {
   --bg: #f9f9f9;
   --text: #1f1f1f;
