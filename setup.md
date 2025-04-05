@@ -14,5 +14,13 @@ Make sure you have:
 
 ---
 
-## 🧱 Project Structure
+🧠 Learn More
+Tailwind CSS Docs
 
+Playwright Docs
+
+Framer Motion
+
+React
+
+Happy testing! 💻✨
