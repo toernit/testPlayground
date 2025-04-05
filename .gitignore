@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Playwright generated files
+test-results/
+playwright-report/
+
+# Cypress generated files
+cypress/screenshots/
+cypress/videos/
+
+# WebDriverIO logs/reports
+allure-results/
