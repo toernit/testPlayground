@@ -141,7 +141,18 @@ Have questions, ideas, or need help?
 - Join the **Discussion** tab
 
 ---
+✅ Recommended Ways to Run Your HTML Page Locally
+Option 1: Live Server (VS Code Extension) — Recommended for beginners
+Install the Live Server extension in VS Code
+👉 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
+Right-click index.html and choose "Open with Live Server"
+
+Your browser will open something like http://127.0.0.1:5500/web-demo/index.html
+
+🎯 This is perfect for running locally and testing with Playwright/Cypress/WebDriverIO.
+
+---
 ## 📣 Final Words
 
 You don’t need to be a developer to get started.  
