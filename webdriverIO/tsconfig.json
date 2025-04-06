@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "target": "es2022",
+        "lib": [
+            "es2022",
+            "dom"
+        ],
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/mocha-framework",
+            "@wdio/visual-service",
+            "wdio-vite-service",
+            "wdio-nuxt-service",
+            "@wdio/firefox-profile-service",
+            "wdio-gmail-service",
+            "@wdio/sauce-service",
+            "@wdio/testingbot-service",
+            "@wdio/browserstack-service",
+            "@wdio/lighthouse-service",
+            "wdio-vscode-service",
+            "wdio-electron-service",
+            "@wdio/appium-service",
+            "wdio-roku-service"
+        ],
+        "skipLibCheck": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": [
+        "test",
+        "wdio.conf.ts"
+    ]
+}
